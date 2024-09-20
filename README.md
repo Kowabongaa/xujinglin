@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>JING-LIN XU</title>
+JING-LIN XU
 </head>
 <body>
 
