@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-	
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
 <style>
 table, th, td 
   {
@@ -37,63 +33,6 @@ p.three {
   background: MediumSeaGreen;
   border-width: thick;
 }
-	body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
-.container {
-    display: grid;
-    gap: 10px;
-    padding: 10px;
-}
-
-/* Default Layout */
-.container {
-    grid-template-areas: 
-        "header"
-        "content"
-        "footer";
-}
-.header {
-    grid-area: header;
-    background-color: lightgreen;
-    height: 100px;
-}
-.content {
-    grid-area: content;
-    background-color: lightblue;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 10px;
-}
-.content > div {
-    height: 100px;
-    background-color: teal;
-}
-.footer {
-    grid-area: footer;
-    background-color: lightgray;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-}
-.footer > div {
-    height: 50px;
-    background-color: gray;
-}
-
-/* Responsive Layout for screens less than 480px */
-@media (min-width: 480px) {
-    .container {
-        grid-template-areas: 
-            "header"
-            "content"
-            "content"
-            "footer";
-    }
-}
-
-	
 </style>
 </head>
 <body style="background-color: rgba(228, 186, 186, 0.219);">
@@ -134,22 +73,6 @@ p.three {
 <p class="one">Hello World</p>
 <p class="two">Hello World</p>
 <p class="three">Hello World</p>
-
-
-<div class="container">
-<div class="header">Header</div>
-<div class="content">
-        <div>Content 1</div>
-        <div>Content 2</div>
-        <div>Content 3</div>
-</div>
-	
-<div class="footer">
-        <div>Footer 1</div>
-        <div>Footer 2</div>
-        <div>Footer 3</div>
-</div>
-</div>	
 
 </body>
 </html>
